@@ -1,0 +1,214 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	/*打开裁剪，不会压缩*/
+	object-fit: cover;
+}
+body{
+	background: #f2f2f2;
+}
+a{
+	text-decoration: none;
+}
+.page-title{
+	width: 1200px;
+	margin: 20px auto;
+}
+.page-title h3{
+	color: #1D2A61;
+	padding-left: 5px;
+	border-left: 5px solid #1D2A61;
+}
+.top-img img{
+	/*取消图片与导航栏之间的空隙*/
+	display: block;
+	width: 100%;
+	height: 180px;
+	
+}
+.header{
+	width: 100%;
+	height: 50px;
+	/*行高*/
+	line-height: 50px;
+	background: #1D2A61;
+	text-align: center;
+}
+.header a{
+	
+	margin: 0 70px;
+	color: #fff;
+}
+.header .active{
+	color: red;
+}
+.header a:hover{
+	color: red;
+}
+.banner img{
+	/*取消图片与导航栏之间的空隙*/
+	display: block;
+	width: 100%;
+	height: 600px;
+	
+}
+.home-about{
+	width: 1160px;
+	height: 270px;
+	margin: 30px auto;
+	padding: 20px;
+	background: #fff;
+}
+.home-about-img{
+	float: left;
+	width: 400px;
+	height: 270px;
+	overflow: hidden;
+	
+}
+.home-about-img:hover{
+	transform: translateY(-10px);
+	box-shadow: 2px 1px 10px #ccc;
+}
+.home-about-img:hover img{
+	transform: scale(1.2);
+}
+.home-about-img img{
+	/*继承父级100%*/
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s;
+	
+}
+.homr-about-text{
+	float: right;
+	
+	width: 740px;
+}
+.homr-about-text h3{
+	margin-bottom: 20px;
+	font-size: 22px;
+}
+.homr-about-text p{
+	/*首行缩进
+	text-indent: 2em;*/
+	margin: 10px;
+	line-height: 1.8;
+}
+.img-box, .activity{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 1200px;
+	
+	margin: auto;
+	
+}
+.img-box img{
+	
+	width: 254px;
+	height: 160px;
+	
+	margin-bottom: 30px;
+	background: #fff;
+	padding: 10px 20px;
+	box-shadow: inset 2px 5px 18px #1D2A61;
+}
+.activity{
+	height: auto;
+	margin-bottom: 20px;
+}
+.activity-left{
+	width: 500px;
+	height: 350px;
+	color: #fff;
+	background: #1D2A61;
+}
+.activity-left-img{
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+}
+.activity-left-img img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	/*移入移出时间*/
+	transition: all 0.4s;
+}
+.activity-left-img:hover{
+	transform: translateY(-10px);
+	box-shadow: 2px 1px 10px #ccc;
+}
+.activity-left-img:hover img{
+	/*放大1.2倍*/
+	transform: scale(1.2);
+}
+.activity-left p{
+	width: 500px;
+	line-height: 50px;
+	padding-left: 10px;
+}
+.activity-right{
+	width: 630px;
+	background: #fff;
+	padding: 10px 20px;
+}
+.activity-right a{
+	/*独自占一行*/
+	display: block;
+	color: black;
+	padding: 10px 0;
+	border-bottom: 1px dashed #ccc;
+}
+.activity a:hover{
+	color: red;
+}
+.footer{
+	text-align: center;
+	background: black;
+	color: #fff;
+	padding: 10px 0;
+}
+.contact{
+	width: 1200px;
+	margin: auto;
+	background: #fff;
+	padding: 20px;
+}
+.contact ul li{
+	display: flex;
+	list-style: none;
+	margin-bottom: 20px;
+}
+.contact ul li span{
+	/*行类元素变成块级元素*/
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+}
+.contact input{
+	outline: none;
+	width: 300px;
+	height: 30px;
+	padding-left: 10px;
+}
+.contact textarea{
+	padding: 10px;
+	font-size: 16px;
+}
+.contact button{
+	cursor: pointer;
+	color: #fff;
+	background: #1D2A61;
+	padding: 5px 30px;
+	border: none;
+	margin-left: 80px;
+}
+.contact button:hover{
+	opacity: 0.8;
+}
